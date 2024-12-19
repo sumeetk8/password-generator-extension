@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/327241e6-1d64-4dbb-9823-231b939501a2)
+
+
 # Password Generator
 
 This is a Chrome extension that generates random passwords with custom options. You can specify the length of the password and include uppercase letters, lowercase letters, numbers, and special characters.

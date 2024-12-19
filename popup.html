@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>Password Generator</h1>
+  
+  <div class="settings">
+    <label for="password-length">Password Length: <span id="slider-value">12</span> characters</label>
+    <input type="range" id="password-length" min="4" max="32" value="12" step="1" />
+  </div>
+
+  <div class="settings">
+    <label>Include:</label>
+    <div id="checkbox-container">
+      <label><input type="checkbox" id="uppercase" checked> Uppercase</label>
+      <label><input type="checkbox" id="lowercase" checked> Lowercase</label>
+      <label><input type="checkbox" id="numbers" checked> Numbers</label>
+    </div>
+  </div>
+
+  <!-- Special and Custom Special Character input -->
+<!-- Special and Custom Special Character input -->
+<div class="settings">
+  <div class="special-settings">
+    <label><input type="checkbox" id="special"> Special</label>
+    <input type="text" id="custom-special" placeholder="!@#$%^&*()_+-=[]{}|;:,.<>?/~" style="display:none;" />
+  </div>
+</div>
+
+  <div class="password-container">
+    <textarea id="password" readonly></textarea>
+  </div>
+
+  <div class="button-container">
+    <button id="copy">Copy</button>
+    <button id="refresh">Refresh</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

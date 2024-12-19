@@ -1,0 +1,153 @@
+/* Basic reset and body styling */
+body {
+  font-family: Arial, sans-serif;
+  width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* Title styling */
+h1 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Styling for the settings section */
+.settings {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="range"] {
+  width: 100%;
+  margin-top: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+#checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#checkbox-container label {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+/* Styling for Special and Custom special characters input */
+.special-settings {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  height: 30px; /* Set a fixed height to prevent UI movement */
+}
+
+.special-settings label {
+  font-size: 14px; /* Example: Increase font size to 16px */
+}
+
+#special {
+  margin-right: 10px; /* Add space between checkbox and input */
+}
+
+#custom-special {
+  width: 250px; /* Fixed width for the custom special character box */
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: none; /* Initially hidden */
+  margin-left: 10px; /* Add a small margin between the checkbox and the input */
+  resize: none; /* Disable resizing */
+  height: 14px; /* Match height with password text box */
+  overflow: hidden;
+  white-space: nowrap; /* Prevent wrapping */
+}
+
+/* Password container */
+.password-container {
+  margin-top: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  margin-top: 0px;
+  position: relative;
+  resize: none;
+  max-height: 18px;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Focus style for textarea */
+textarea:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Buttons under the password text area */
+.button-container {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 48%;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+#copy, #refresh {
+  background-color: transparent;
+  color: #333;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+textarea,
+button {
+  margin-top: 5px;
+}
